@@ -1,8 +1,10 @@
-FROM quay.io/keycloak/keycloak:26.0.0
+FROM quay.io/keycloak/keycloak:26.4.0
 
 # Admin
 ENV KC_BOOTSTRAP_ADMIN_USERNAME=admin
 ENV KC_BOOTSTRAP_ADMIN_PASSWORD=admin
+ENV KC_DB=postgres
+ENV KC_DB_URL_HOST=database-1.cidsieogcqxr.us-east-1.rds.amazonaws.com
 
 # Limitar memoria
 ENV JAVA_OPTS="-Xms256m -Xmx512m"
