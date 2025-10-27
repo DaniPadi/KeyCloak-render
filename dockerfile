@@ -10,7 +10,7 @@ ENV KC_DB_PASSWORD=9ZOel54euK*
 ENV KC_DB_URL_HOST=database-1.cidsieogcqxr.us-east-1.rds.amazonaws.com
 ENV KC_DB_URL_PORT=5432
 ENV KC_DB_USERNAME=postgres
-
+ENV KC_DB_URL_DATABASE=postgres
 
 # Limitar memoria
 ENV JAVA_OPTS="-Xms256m -Xmx512m"
